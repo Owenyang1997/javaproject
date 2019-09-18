@@ -1,0 +1,242 @@
+/*导航*/
+.menu{
+    padding-left: 400px;
+}
+
+/*单个导航项*/
+.menu1{
+    padding-left: 10px;
+}
+
+/*轮播图div*/
+#myCarousel{
+    width: 100%;
+    height: 500px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/*存放轮播图片的div*/
+.banner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-slide{
+    width: 100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover; /*让图片覆盖满整个div*/
+    background-position: center,center; /*让图片在div里水平垂直居中*/
+    position: absolute;
+    display: none;
+}
+
+.slide1{
+    background-image: url("../imgs/pic1.jpg");
+}
+.slide2{
+    background-image: url("../imgs/pic2.jpg");
+}
+.slide3{
+    background-image: url("../imgs/pic4.jpg");
+}
+.slide-active{
+    display: block;
+}
+
+/*上一张、下一张的按钮*/
+.button{
+    position: absolute;/*绝对位置*/
+    background: url("../imgs/arrow.png") center center no-repeat;/*水平垂直方向都设置为center*/
+    transform:rotate(180deg);/*旋转180°*/
+    width: 40px;
+    height: 80px;
+    top:50%;/*距离顶部*/
+    /*left: 244px;*/
+    margin-top: -40px;
+}
+
+.next{
+    transform:rotate(0deg);/*旋转0°*/
+    left:auto;
+    right:0;
+}
+
+.button:hover{
+    background-color:#333;
+    opacity: 0.8;/*透明度*/
+    filter:alpha(opacity=80);/*保证有些浏览器的兼容性*/
+}
+
+.dots{
+    position:absolute;
+    bottom: 24px;
+    right: 0;
+    text-align: right;
+    padding-right: 700px;
+    line-height: 12px;
+}
+
+.dots span{
+    display: inline-block;/*不独占一行的块级元素，1、使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行.
+                            2、能够改变元素的height，width的值.  3、可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.*/
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;/*使每个圆点之间有8px的距离*/
+    background-color: rgba(7, 17, 27, 0.4);
+    box-shadow:  0 0 0 2px rgba(255, 255, 255, 0.8) inset;/*设置圆点边框阴影*/
+    cursor: pointer;
+}
+
+.dots span.active{
+    box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+    background-color: #ffffff;
+}
+
+/*内容*/
+.main{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+#main .col-lg-4:hover {
+    background: #f1f1f1;
+    box-shadow: 1px 1px 4px #ccc;
+    opacity: 0.8;
+}
+
+/*网格*/
+.content{
+   width: 85%;/*网格系统div占main宽度的85%*/
+}
+.col-lg-4{
+    height:700px;/*网格系统每列的高度*/
+}
+
+/*每一块的标题*/
+.col-lg-4 h3{
+    height:4%;
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+/*每一块里面的图片*/
+.pic{
+    height:35%;
+}
+
+/*左侧栏和中间栏分为up、down两部分，分别存放图片和文字*/
+.up{
+    width: 100%;
+    margin: -5px 0px 10px 0px ;
+}
+.word{
+    height:55%;
+    width: 100%;
+    color: #0f0f0f;
+}
+.word h4:hover{
+    color: #1b6d85;
+    /*box-shadow: 1px 1px 4px #ccc;*/
+    /*opacity: 0.5;*/
+}
+
+/*三大栏里面的图标*/
+.col-lg-4 span{
+    display: inline-block;
+    /*margin-top: -30px;*/
+}
+
+/*分割线*/
+hr{
+    margin-top: -5px;
+    background-color: #a9b7c6;
+    opacity: 0.8;
+    height: 3px;
+    width:95%;
+    border: none;
+}
+/*正文里面的分割线*/
+.up hr{
+    background-color: #a9b7c6;
+    opacity: 0.8;
+    height: 2px;
+    width:95%;
+    border: none;
+}
+
+/*获奖情况部分的图片*/
+.medal{
+    background-image: url("../imgs/m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*让图片覆盖满整个div*/
+    background-position: center,center; /*让图片在div里水平垂直居中*/
+}
+/*近期任务部分的图片*/
+.schedule{
+    background-image: url("../imgs/n.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /*让图片覆盖满整个div*/
+    background-position: center,center; /*让图片在div里水平垂直居中*/
+    margin-top: -30px;
+}
+
+/*内容里面的文字样式设置*/
+.content p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/*公告通知部分样式设置*/
+.news_list li{list-style: none;}
+.news_list li.news { line-height:24px;padding-left:0px; } /**标题图标**/
+/*.news_list li.news span.news_title { float:left;}*/
+/*.news_list li.news span.news_meta { float:right; margin-left:2px;}*/
+.news_list li.news p {clear:both; line-height:20px;}
+.news_list li.news p a { }
+.news_list li.news p a:hover { text-decoration:underline;}
+
+.sj{ width:61px; height:60px; float:left; text-align:center; /* margin-top:8px; */}
+.sj .date-day{ font-size: 20px;color: #fff; height: 32px; line-height: 32px;background-color: #189598;}
+.sj .date-month { height: 30px;line-height: 30px;color: #797979; background-color: #fff;}
+.zdy-tj li{padding: 21px 0;border-bottom:1px solid #C1B394;}
+.zdy-tj li.n5{ border-bottom:0px solid #C1B394;}
+.zdy-1{ width: 210px; float:right;}
+.zdy-1 .bt{ line-height: 22px;}
+.zdy-1 .bt a{ color: #2b2b2b;font-size: 15px; }
+/*公告通知部分样式设置*/
+
+/*脚注*/
+.footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: #5e5e5e;
+    opacity: 0.6;
+    margin-top: 10px;
+    padding-top: 25px;
+    color: whitesmoke;
+}
+.footer h6 a{
+    font-weight: normal;
+    font-size: 17px;
+    /*font-family: inherit;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    display: table;
+    padding: 0;
+    /*margin-bottom: 10px;*/
+    margin: auto;
+    margin-top: -20px;
+    color: whitesmoke;
+}
+.footer p{
+    margin-top: 15px;
+}
+

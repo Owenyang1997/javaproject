@@ -1,0 +1,45 @@
+.home{
+    height: 400px;
+    width: 100%;
+    background-image: url("../imgs/school.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar-header a{
+    color: #585858;
+    font-family: 楷体;
+    font-size: x-large;
+}
+.row h1{
+    color: #1866a8;
+    font-weight: bold;
+    font-family: 宋体;/
+    font-size:40px;
+
+}
+.row h2{
+    color: #585858;
+    font-weight: bold;
+    font-family: 宋体;
+    font-size:x-large;
+}
+.row a{
+    color: #b7b7b7;
+    font-family: 楷体;
+    font-size:30px;
+}
+.main p{
+    color: #585858;
+    text-indent: 2em;
+    font-family: 宋体;
+    font-size:x-large;
+}
+.footer{
+
+    background: #010304;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #b7b7b7;
+    line-height:30px;
+    text-align: right;
+}

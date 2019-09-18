@@ -1,0 +1,93 @@
+body{
+    font-family:"Microsoft YaHei UI";
+}
+.navbar-reverse .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+#home{
+    margin-top: 51px;
+    background: url("../images/background.png");
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+.lvjing{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 90px 0;
+}
+#home h1{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#home p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 40px;
+}
+#guizhang{
+    padding: 65px 0;
+}
+#guizhang image{
+    padding: 300px;
+    text-align: center;
+}
+#guizhang .col-lg-4{
+    padding: 15px;
+}
+#guizhang .col-lg-4:hover{
+    background: #f1f1f1;
+    box-shadow: 1px 1px 4px #ccc;
+}
+#guizhang h3{
+    padding:105;
+    text-align: center;
+}
+#guizhang p{
+    padding: 25px;
+    font-size: 16px;
+    line-height: 32px;
+}
+footer{
+    font-weight: 400px;
+    text-align: center;
+    padding: 20px;
+}
+#contact{
+    background: url("../images/contact.png") no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+}
+#contact h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+#contact p{
+    line-height: 25px;
+    margin-bottom: 20px;
+
+}
+#contact .form-control{
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#contact textarea .form-control{
+    height: auto;
+}
+#contact input[type="submit"]{
+    background: #40D2B1;
+    color: #ffffff;
+    font-weight: bold;
+}
+#contact input[type="submit"]:hover {
+    background: rgba(44,142,120);
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jia.mapper.getPassageMapper">
+    <select id="getPasageList" resultType="com.jia.bean.passage">
+          select * from passage
+      </select>
+    <select id="getPasageListBytype" resultType="com.jia.bean.passage" parameterType="String">
+           select * from passage where type=#{type}
+    </select>
+    <select id="getpassageListByauthour" resultType="com.jia.bean.passage" parameterType="String">
+        select * from passage where authour=#{title}
+    </select>
+    <select id="getPeople" resultType="com.jia.bean.people" parameterType="int">
+        select *from people where typeId=#{typeId}
+    </select>
+    <select id="getPassageByCid" resultType="com.jia.bean.passage" parameterType="String">
+        select * from passage where cid=#{cid}
+    </select>
+    <select id="getPeotype" resultType="com.jia.bean.peotype">
+        select * from peotype
+    </select>
+</mapper>

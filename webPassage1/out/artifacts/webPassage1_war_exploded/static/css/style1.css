@@ -1,0 +1,279 @@
+.menu{
+    padding-left: 400px;
+}
+
+/*单个导航项*/
+.menu1{
+    padding-left: 10px;
+}
+
+.home{
+    height: 500px;
+    width: 100%;
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.content .commContent .mainContent .articleIntro p*/
+/*{*/
+    /*padding:0.75em 0;*/
+/*}*/
+
+.content .mainContent .subChannelListNoImg figure
+{
+    height:190px;
+    border-top: 4px solid #189598;
+}
+
+.content .mainContent .subChannelListNoImg li.alternative figure
+{
+    border-top: 4px solid #E0823D;
+}
+
+.channelInfo
+{
+    position:absolute;
+    right:20px;
+    border-bottom:7px solid #ff9600;
+    color:#fff;
+    width:340px;
+    top:-250px;
+    z-index:1;
+    height:250px;
+    text-align:center;
+    padding:30px;
+    zoom:1;
+    overflow:hidden;
+}
+
+.channelInfo .nav
+{
+    font-family:sans-serif;
+}
+
+.channelInfo .nav a
+{
+    color:#fff;
+    font-size:12px;
+}
+
+.channelInfo .nav a:hover
+{
+    color:#FC0;
+}
+
+.channelInfo i
+{
+    background: #189598;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    position:absolute;
+    z-index:-1;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    *height:999px;
+}
+
+.channelInfo h2
+{
+    font-size:30px;
+    line-height:1em;
+    border-bottom:1px solid #a793b5;
+    padding:0.2em 0 0.65em;
+}
+
+.channelInfo p
+{
+    font-size:14px;
+    line-height:1.5em;
+    padding-top:1.2em;
+}
+
+.content .mainContent .subChannelList li
+{
+    float:left;
+    _display:inline;
+    width:33.3%;
+    margin-bottom:30px;
+}
+
+.content .mainContent .subChannelList figure
+{
+    background:#f6f6f6;
+    height:275px;
+    margin:0 15px;
+}
+
+.content .mainContent .subChannelList figure img
+{
+    width:100%;
+}
+
+.content .mainContent .subChannelList figure figcaption
+{
+    display:block;
+    padding:1.2em 30px 0 30px;
+}
+
+.content .mainContent .subChannelList figure figcaption a
+{
+    color:#22132d;
+    font-size:16px;
+    line-height:22px;
+    padding:0.3em 0 0.5em 0;
+    display:block;
+}
+
+.content .mainContent .subChannelList figure figcaption a:hover
+{
+    color:#4F608C;
+}
+
+.content .mainContent .subChannelList figure p
+{
+    color:#777;
+    padding:0 30px 0 30px;
+    font-size:12px;
+    line-height:20px;
+}
+
+
+.content .mainContent .multiChannel figure
+{
+    height:	380px
+}
+
+
+.content .mainContent .subChannelList figure ul
+{
+    padding:0 20px;
+}
+
+
+.content .mainContent .subChannelList figure li
+{
+    float: left;
+    _display:inline;
+    line-height:18px;
+    font-size:12px;
+    width:50%;
+    margin:0;
+}
+
+.content .mainContent .subChannelList figure li a
+{
+    display:block;
+    border-bottom:1px solid #ddd;
+    padding:10px 0;
+    margin:0 10px;
+}
+
+.content .mainContent .subChannelList figure li a i
+{
+    float: right;
+    _display:inline;
+}
+
+
+.content .commContent .mainContent
+{
+    padding:0 5px;
+}
+
+.content .commContent .mainContent .contentNav
+{
+    margin-right:15px;
+    margin-left:15px;
+}
+
+.contentNav
+{
+    border-bottom:1px solid #ddd;
+    margin-bottom:30px;
+}
+
+.contentNav .nav
+{
+    color:#999;
+    font-family:sans-serif
+}
+
+.contentNav .nav a
+{
+    color:#999;
+    font-size:12px;
+}
+
+.contentNav .nav a:hover
+{
+    color:#5c307d;
+}
+
+.contentNav h1
+{
+    font-size:28px;
+    color: #1868ab;
+    line-height:1.25em;
+    padding:0.4em 0 0.6em 0;
+}
+
+.contentNav h1.txtTitle
+{
+    color:#22132d;
+    font-size:24px;
+}
+
+.contentNav h1.noNav
+{
+    padding:0 0 1em 0;
+    font-size:24px;
+}
+
+.lvjing{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 90px 0;
+}
+
+footer{
+    font-weight: 400px;
+    text-align: center;
+    padding: 20px;
+}
+#contact{
+    background: url("../imgs/contact.png") no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+}
+#contact h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+#contact p{
+    line-height: 25px;
+    margin-bottom: 20px;
+
+}
+#contact .form-control{
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#contact textarea .form-control{
+    height: auto;
+}
+#contact input[type="submit"]{
+    background: #40D2B1;
+    color: #ffffff;
+    font-weight: bold;
+}
+#contact input[type="submit"]:hover {
+    background: rgba(44,142,120);
+}
